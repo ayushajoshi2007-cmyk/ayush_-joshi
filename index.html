@@ -103,10 +103,7 @@
             <li>Graphics and multimedia applications</li>
         </ul>
         <br>
-        <h2>Conclusion</h2>
-        <p>C++ is a versatile and powerful programming language that plays a crucial role in various domains of computer
-            science and software development. Its ability to combine high-level features with low-level control makes it
-            an ideal choice for many applications.</p>
+
     </section>
     <section>
         <br>
@@ -259,12 +256,8 @@ int main() {
         </ul>
         <p>example</p>
         int a = 10, b = 3;
-        cout << a + b; // 13
-         cout << a - b; // 7
-          cout << a * b; // 30 
-          cout << a / b; // 3 (integer division)
-           cout << a % b; //1
-             <br>
+        cout << a + b; // 13 cout << a - b; // 7 cout << a * b; // 30 cout << a / b; // 3 (integer division) cout << a %
+            b; //1 <br>
             <h2>Relational Operators</h2>
             <p>Used to compare two values.
                 Result is true (1) or false (0).</p>
@@ -278,59 +271,268 @@ int main() {
             </ul>
             <br>
             <h2>Logical operators</h2>
-             <p>Used to combine multiple conditions.</p>
+            <p>Used to combine multiple conditions.</p>
             <ul>
-                 <li>Logical AND (&&)</li>
-                 <li>Logical OR (||)</li>
-                 <li>Logical NOT (!)</li>
+                <li>Logical AND (&&)</li>
+                <li>Logical OR (||)</li>
+                <li>Logical NOT (!)</li>
             </ul>
-            
-            </section>
+            <br>
+            <p>Truth Table:
+                AND (&&)
+                A B Result
+                0 0 0
+                0 1 0
+                1 0 0
+                1 1 1</p>
+            <br>
+            <p>example</p>
+            <pre>
+                int a = 10, b = 20;
+cout << (a < b && b > 15); // 1
+cout << !(a > b);         // 1
+              </pre>
+            <br>
+            <h2>Assignment Operators</h2>
+            <p>Used to assign values to variables.</p>
+            <ul></ul>
+            <li>Assignment (=)</li>
+            <li>Addition assignment (+=)</li>
+            <li>Subtraction assignment (-=)</li>
+            <li>Multiplication assignment (*=)</li>
+            <li>Division assignment (/=)</li>
+            <li>Modulus assignment (%=)</li>
+            </ul>
+            <br>
+            <p>Example</p>
+            <pre>
+                int a = 10;
+a += 5;   // a = 15
+a *= 2;   // a = 30
+              </pre>
+            <br>
+            <h2>Increment/Decrement Operators</h2>
+            <p>Used to increase or decrease the value of a variable by 1.</p>
+            <ul>
+                <li>Pre-increment (++variable)</li>
+                <li>Post-increment (variable++)</li>
+                <li>Pre-decrement (--variable)</li>
+                <li>Post-decrement (variable--)</li>
+            </ul>
+            <br>
+            <p>Example</p>
+            <pre>
+                int a = 10;
+++a;   // a = 11
+a++;   // a = 12
+--a;   // a = 11
+a--;   // a = 10
+              </pre>
+            <br>
+            <h2>Bitwise Operators</h2>
+            <p>Used to perform operations on individual bits of integers.</p>
+            <ul>
+                <li>Bitwise AND (&amp;)</li>
+                <li>Bitwise OR (|)</li>
+                <li>Bitwise XOR (^)</li>
+                <li>Bitwise NOT (~)</li>
+                <li>Left shift (&lt;&lt;)</li>
+                <li>Right shift (&gt;&gt;)</li>
+            </ul>
+            <br>
+            <p>Example</p>
+            <pre>
+                int a = 10, b = 5;
+cout << (a &amp; b); // 0
+cout << (a | b); // 15
+cout << (a ^ b); // 15
+cout << (~a);    // -11
+cout << (a &lt;&lt; 1); // 20
+cout << (a &gt;&gt; 1); // 5
+              </pre>
+            <br>
+            <h2>Conditional operator</h2>
+            <p>Used to evaluate a condition and return one of two values based on the result.</p>
+            <pre>
+                int a = 10, b = 20;
+int max = (a > b) ? a : b; // max = 20
+              </pre>
+            <br>
+            <h2>special operators</h2>
+            <ul>
+                <li>sizeof operator</li>
+                <pre>
+                    cout << sizeof(int); // 4
+                </pre>
+                <li>comma operator</li>
+                <pre>
+                    int a;
+a = (10, 20, 30);
+cout << a; // 30
 
+                </pre>
+                <li>address-of operator (&amp;)</li>
+                <pre>
+                    int x = 10;
+int *p = &x;
+cout << *p; // 10
 
-
-                <!-- Code Examples -->
-                <section id="examples">
-                    <h2>Basic C++ Examples</h2>
-
-                    <h3>1. Hello World</h3>
-                    <pre>
-#include &lt;iostream&gt;
-using namespace std;
-
-int main() {
-    cout << "Hello, World!";
-    return 0;
+                </pre>
+            </ul>
+    </section>
+    <section>
+        <br>
+        <h2>control statements</h2>
+        <p>What are control statements?</p>
+        <p>
+            Control statements are statements that control the flow of execution of a program based on conditions,
+            loops, or jumps.
+        </p>
+        <br>
+        <h2>Types of Control Statements</h2>
+        <ul>
+            <li>Selection statements (if, if-else, switch)</li>
+            <li>Loop statements (for, while, do-while)</li>
+            <li>Jump statements (break, continue, return)</li>
+        </ul>
+        <br>
+        <h2>What are control statements ?</h2>
+        <p>
+            Selection statements evaluate a condition (true or false) and select one path of execution from multiple
+            possible paths.
+        </p>
+        <br>
+        <h2>Types of Control Statements</h2>
+        <p>
+            1. if statement: Executes a block of code if a specified condition is true. <br>
+            2. if–else statement: Executes one block of code if a condition is true, and another block if it's false.
+            <br>
+            3. else-if ladder: Allows multiple conditions to be checked in sequence. <br>
+            4. Nested if statement: An if statement inside another if statement. <br>
+            5. switch statement: Selects one of many code blocks to execute based on the value of an expression. <br>
+        </p>
+        <br>
+        <p>if statement :-</p>
+        Executes a block of code only when the condition is true.
+        <pre>
+            Syntax:
+            if (condition) {
+    // statements
 }
+
         </pre>
-
-                    <h3>2. Simple Addition Program</h3>
-                    <pre>
-#include &lt;iostream&gt;
-using namespace std;
-
-int main() {
-    int a, b;
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
-    cout << "Sum = " << a + b;
-    return 0;
+        <pre>
+            int age = 20;
+if (age >= 18) {
+    cout << "Eligible to vote";
 }
+         </pre>
+         <br>
+         <p>if–else Statement :-</p>
+         Executes one block if condition is true, otherwise executes the else block.
+         <pre>
+            Syntax :
+            if (condition) {
+    // true block
+} else {
+    // false block
+}
+
+         </pre>
+         <pre>
+            int num = 7;
+if (num % 2 == 0)
+    cout << "Even number";
+else
+    cout << "Odd number";
+         </pre>
+         <br>
+         <p>else-if Ladder :-</p>
+         Used when multiple conditions need to be tested sequentially.
+         <pre>
+            syntax :
+            if (condition1) {
+}
+else if (condition2) {
+}
+else if (condition3) {
+}
+else {
+}
+
+         </pre>
+         <pre>
+            int marks = 82;
+
+if (marks >= 90)
+    cout << "Grade A";
+else if (marks >= 75)
+    cout << "Grade B";
+else if (marks >= 50)
+    cout << "Grade C";
+else
+    cout << "Fail";
+
+         </pre>
+         <br>
+         <p>Nested if statement :-</p>
+         An if statement inside another if statement.
+         <pre>
+            Syntax:
+            if (condition1) {
+    if (condition2) {
+        // statements
+    }
+}
+         </pre>
+         <pre>
+            example:
+            int a = 10, b = 20, c = 15;
+
+if (a > b) {
+    if (a > c)
+        cout << "a is largest";
+} else {
+    if (b > c)
+        cout << "b is largest";
+    else
+        cout << "c is largest";
+}
+
+         </pre>
+         <br>
+            <p>switch statement :-</p>
+            Selects one of many code blocks to execute based on the value of an expression.
+            <pre>
+                Syntax:
+                switch (expression) {
+                
+    case value1:
+
+    case value2:
+
+    default:
+        // default block
+                }
         </pre>
+            <pre>
+                example:
+                int day = 3;
+                <br>
 
-                </section>
+    </section>
 
-                <!-- Contact -->
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <p>Email: bcsstudent@example.com</p>
-                    <p>Phone: +91-XXXXXXXXXX</p>
-                </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: ayushjoshiN15@gmail.com</p>
+        <p>Phone: +91-8459380700</p>
+    </section>
 
-                <!-- Footer -->
-                <footer>
-                    <p>© 2025 C++ Learning Portal for BCS Students</p>
-                </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 C++ Learning Portal for BCS Students</p>
+    </footer>
 
 </body>
 

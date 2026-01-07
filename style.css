@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #1172e0;
+    background: #3409f0;
     color: white;
     padding: 15px;
     text-align: center;
@@ -33,7 +33,7 @@ section {
 
 section h2 {
     margin-bottom: 12px;
-    color: #241f1a;
+    color: #d41717;
 }
 
 ul {
