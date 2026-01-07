@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ NOTES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <h1>C++ NOTES</h1>
+        <img height="110" width="110" src="image.png" alt="c++">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About C++</a>
+            <a href="#topics">Topics</a>
+            <a href="#examples">Examples</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to the C++ learning website specially designed for Bachelor of Computer Science (BCS) students.</p>
+    </section>
+
+    <!-- About C++ -->
+    <section id="about">
+        <h2>About C++</h2>
+        <p>C++ is a powerful programming language used for system software, game development, and high-performance
+            applications. It was developed by Bjarne Stroustrup and supports procedural, object-oriented, and generic
+            programming.</p>
+    </section>
+
+    <!-- Topics / Syllabus -->
+    <section id="topics">
+        <h2>Topics Covered</h2>
+        <ul>
+            <li>Introduction to C++</li>
+            <li>Data Types & Variables</li>
+            <li>Operators & Expressions</li>
+            <li>Control Statements (if, switch)</li>
+            <li>Loops (for, while, do-while)</li>
+            <li>Functions</li>
+            <li>Arrays & Strings</li>
+            <li>Pointers</li>
+            <li>Object-Oriented Programming (Classes, Objects)</li>
+            <li>Inheritance & Polymorphism</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Introduction to C++</h2>
+        <p>
+            C++ is a powerful, general-purpose programming language developed by
+            <strong>Bjarne Stroustrup</strong> in the early 1980s.
+            It is an extension of the C programming language and supports
+            both procedural and object-oriented programming.
+        </p>
+        <p>
+            C++ is widely used in software development, game development,
+            system programming, embedded systems, and competitive programming.
+            It provides high performance and fine control over system resources.
+        </p>
+        <p>
+            Due to its efficiency and flexibility, C++ is one of the most popular
+            programming languages taught in
+            <strong>BCS (Bachelor of Computer Science)</strong> courses.
+        </p>
+        <p>
+            C++ supports multiple programming paradigms such as:
+
+            Procedural programming
+
+            Object-oriented programming
+
+            Generic programming
+
+            Because of this flexibility, C++ is widely used in both academic and industrial applications.
+        </p>
+        <br>
+        <h2>Features of C++</h2>
+        <ul></ul>
+        <li>Object-oriented programming (OOP)</li>
+        <li>Procedural programming</li>
+        <li>Generic programming</li>
+        <li>High performance and efficiency</li>
+        <li>Support for low-level memory manipulation</li>
+        </ul>
+        <br>
+        <h2>Application of C++</h2>
+        <p>C++ is used in a wide range of applications, including:</p>
+        <ul>
+            <li>System software development</li>
+            <li>Game development</li>
+            <li>High-performance computing</li>
+            <li>Embedded systems programming</li>
+            <li>Real-time systems</li>
+            <li>Graphics and multimedia applications</li>
+        </ul>
+        <br>
+        <h2>Conclusion</h2>
+        <p>C++ is a versatile and powerful programming language that plays a crucial role in various domains of computer
+            science and software development. Its ability to combine high-level features with low-level control makes it
+            an ideal choice for many applications.</p>
+    </section>
+    <section>
+        <br>
+        <h2>Data Types</h2>
+        <p>
+            A data type specifies the type of data a variable can store in a program.
+            It tells the compiler how much memory is needed and what kind of value can be stored.
+        </p>
+        <br>
+        <h2>Types of Data Types</h2>
+        <p>There are two main Types of Data Types in c++</p>
+        <ul></ul>
+        <li>Primitive Data Types</li>
+        <li>Derived Data Types</li>
+        </ul>
+        <br>
+        <h2>Primitive Data Types</h2>
+        <p>Primitive data types are the basic data types provided by the C++ language. They are also known as built-in
+            data types.</p>
+        <ul>
+            <li>int</li>
+            <li>float</li>
+            <li>double</li>
+            <li>char</li>
+            <li>bool</li>
+        </ul>
+        <br>
+        <h2>Derived Data Types</h2>
+        <p>Derived data types are created from primitive data types using various operations and declarations.</p>
+        <ul>
+            <li>arrays</li>
+            <li>pointers</li>
+            <li>references</li>
+            <li>functions</li>
+        </ul>
+        <br>
+        <h2>Variables</h2>
+        <p>A variable is a named memory location used to store data in a program. Variables are declared with a specific
+            data type and can be assigned values during runtime.</p>
+        <br>
+        <h2>Rules for Naming Variables</h2>
+        <ul>
+            <li>Variables must start with a letter or an underscore.</li>
+            <li>Variables can contain letters, digits, and underscores.</li>
+            <li>Variables are case-sensitive.</li>
+            <li>Variables cannot be reserved keywords.</li>
+        </ul>
+        <br>
+        <h2>Example of variable Declaration</h2>
+        <p>declaration without initialization:</p>
+        <pre>
+            int age;
+            float salary;
+            char grade;
+            bool isPassed;
+        </pre>
+        <p>declaration with initialization:</p>
+        <pre>
+            int age = 20;
+            float salary = 50000.5;
+            char grade = 'B';
+            bool isPassed = true;
+        </pre>
+        <p>multiple variable declarations:</p>
+        <pre>
+            int a, b, c;
+float x = 2.5, y = 4.8;
+        </pre>
+        <p>same value to multiple variables:</p>
+        <pre>
+            int x = 5, y = 5, z = 5;
+        </pre>
+        <p>Character Variable Declaration</p>
+        <pre>
+            char ch = 'A';
+char symbol = '#';
+        </pre>
+        <p>Boolean Variable Declaration</p>
+        <pre>
+            bool status = true;
+bool isLogin = false;
+
+        </pre>
+        <p>string variable declaration:</p>
+        <pre>
+            string name = "Ayush";
+        </pre>
+        <p>constant variable declaration</p>
+        <pre>
+            const float PI = 3.14;
+        </pre>
+        <p>Example Program Using Variable Declaration</p>
+        <pre>
+            #include <iostream>
+using namespace std;
+
+int main() {
+    int roll = 101;
+    float marks = 88.5;
+    char grade = 'A';
+    bool pass = true;
+
+    cout << "Roll: " << roll << endl;
+    cout << "Marks: " << marks << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Pass: " << pass << endl;
+
+    return 0;
+}
+ </pre>
+    </section>
+    <section>
+        <br>
+        <h2>Operators & Expressions</h2>
+        <br>
+        <h2>What is Operators</h2>
+        <p>An operator is a symbol that tells the compiler to perform a specific operation on one or more operands
+            (variables, constants, or expressions).</p>
+        <br>
+        <p>examples</p>
+        int a = 10, b = 5;
+        int c = a + b;
+        <br>
+        <h2>What is expressions</h2>
+        <p>
+            An expression is a combination of operands and operators that produces a single value.
+        </p>
+        <p>example</p>
+        a + b * 2
+        <br>
+        <h2>Types of Operators</h2>
+        <ul>
+            <li>Arithmetic Operators</li>
+            <li>Relational Operators</li>
+            <li>Logical Operators</li>
+            <li>Assignment Operators</li>
+            <li>Increment/Decrement Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Conditional Operators</li>
+            <li>special Operators</li>
+        </ul>
+        <br>
+        <h2>Arithmetic operators</h2>
+        <ul></ul>
+        <li>Addition (+)</li>
+        <li>Subtraction (-)</li>
+        <li>Multiplication (*)</li>
+        <li>Division (/)</li>
+        <li>Modulus (%)</li>
+        </ul>
+        <p>example</p>
+        int a = 10, b = 3;
+        cout << a + b; // 13
+         cout << a - b; // 7
+          cout << a * b; // 30 
+          cout << a / b; // 3 (integer division)
+           cout << a % b; //1
+             <br>
+            <h2>Relational Operators</h2>
+            <p>Used to compare two values.
+                Result is true (1) or false (0).</p>
+            <ul></ul>
+            <li>Equal to (==)</li>
+            <li>Not equal to (!=)</li>
+            <li>Greater than (&gt;)</li>
+            <li>Less than (&lt;)</li>
+            <li>Greater than or equal to (&gt;=)</li>
+            <li>Less than or equal to (&lt;=)</li>
+            </ul>
+            <br>
+            <h2>Logical operators</h2>
+             <p>Used to combine multiple conditions.</p>
+            <ul>
+                 <li>Logical AND (&&)</li>
+                 <li>Logical OR (||)</li>
+                 <li>Logical NOT (!)</li>
+            </ul>
+            
+            </section>
+
+
+
+                <!-- Code Examples -->
+                <section id="examples">
+                    <h2>Basic C++ Examples</h2>
+
+                    <h3>1. Hello World</h3>
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Hello, World!";
+    return 0;
+}
+        </pre>
+
+                    <h3>2. Simple Addition Program</h3>
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    cout << "Sum = " << a + b;
+    return 0;
+}
+        </pre>
+
+                </section>
+
+                <!-- Contact -->
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>Email: bcsstudent@example.com</p>
+                    <p>Phone: +91-XXXXXXXXXX</p>
+                </section>
+
+                <!-- Footer -->
+                <footer>
+                    <p>© 2025 C++ Learning Portal for BCS Students</p>
+                </footer>
+
+</body>
+
+</html>
