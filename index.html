@@ -427,10 +427,10 @@ if (age >= 18) {
     cout << "Eligible to vote";
 }
          </pre>
-         <br>
-         <p>if–else Statement :-</p>
-         Executes one block if condition is true, otherwise executes the else block.
-         <pre>
+        <br>
+        <p>if–else Statement :-</p>
+        Executes one block if condition is true, otherwise executes the else block.
+        <pre>
             Syntax :
             if (condition) {
     // true block
@@ -439,17 +439,17 @@ if (age >= 18) {
 }
 
          </pre>
-         <pre>
+        <pre>
             int num = 7;
 if (num % 2 == 0)
     cout << "Even number";
 else
     cout << "Odd number";
          </pre>
-         <br>
-         <p>else-if Ladder :-</p>
-         Used when multiple conditions need to be tested sequentially.
-         <pre>
+        <br>
+        <p>else-if Ladder :-</p>
+        Used when multiple conditions need to be tested sequentially.
+        <pre>
             syntax :
             if (condition1) {
 }
@@ -461,7 +461,7 @@ else {
 }
 
          </pre>
-         <pre>
+        <pre>
             int marks = 82;
 
 if (marks >= 90)
@@ -474,10 +474,10 @@ else
     cout << "Fail";
 
          </pre>
-         <br>
-         <p>Nested if statement :-</p>
-         An if statement inside another if statement.
-         <pre>
+        <br>
+        <p>Nested if statement :-</p>
+        An if statement inside another if statement.
+        <pre>
             Syntax:
             if (condition1) {
     if (condition2) {
@@ -485,7 +485,7 @@ else
     }
 }
          </pre>
-         <pre>
+        <pre>
             example:
             int a = 10, b = 20, c = 15;
 
@@ -500,10 +500,10 @@ if (a > b) {
 }
 
          </pre>
-         <br>
-            <p>switch statement :-</p>
-            Selects one of many code blocks to execute based on the value of an expression.
-            <pre>
+        <br>
+        <p>switch statement :-</p>
+        Selects one of many code blocks to execute based on the value of an expression.
+        <pre>
                 Syntax:
                 switch (expression) {
                 
@@ -515,10 +515,382 @@ if (a > b) {
         // default block
                 }
         </pre>
-            <pre>
+        <pre>
                 example:
                 int day = 3;
-                <br>
+                switch (choice) {
+    case 1: cout << "Monday"; break;
+    case 2: cout << "Tuesday"; break;
+    case 3: cout << "Wednesday"; break;
+    default: cout << "Invalid choice";
+}
+🔹 break stops execution
+🔹 default executes if no case matches
+</pre>
+        <br>
+        <h2>What's next ?</h2>
+        <p>Next, we will learn about Loop Statements in C++ which help in executing a block of code multiple times based
+            on a condition.</p>
+        <br>
+        <h2>What is Loop ?</h2>
+        <p>
+            A loop is a control structure that allows you to repeat a block of code multiple times based on a
+            specified condition.
+        </p>
+        <br>
+        <h2>Types of Loops</h2>
+        <ul>
+            <li>for loop</li>
+            <li>while loop</li>
+            <li>do-while loop</li>
+        </ul>
+        <br>
+        <p>for Loop</p>
+        Used when the number of iterations is known in advance.
+        <pre>
+                Syntax:
+                for (initialization; condition; increment/decrement) {
+                }
+                </pre>
+        <pre>
+                example:
+                for (int i = 1; i <= 5; i++) {
+                         cout << i << " ";
+                }
+                </pre>
+        <br>
+        <p>working</p>
+        1. Initialization: Sets the starting value of the loop control variable. <br>
+        2. Condition: Evaluated before each iteration; if true, the loop body executes. <br>
+        3. Increment/Decrement: Updates the loop control variable after each iteration. <br>
+        <br>
+        <p>while Loop</p>
+        Used when the number of iterations is unknown and depends on a condition.
+        <pre>
+                    Syntax:
+                    while (condition) {
+                    }
+                </pre>
+        <pre>
+                    example:
+                    int i = 1;
+                    while (i <= 5) {
+                        cout << i << " ";
+                        i++;
+                    }
+                </pre>
+        <br>
+        <p>do-while Loop</p>
+        Similar to while loop, but guarantees at least one execution of the loop body.
+        <pre>
+                    Syntax:
+                    do {
+                    } while (condition);
+                    </pre>
+        <pre>
+                    example:
+                    int i = 1;
+                    do {
+                        cout << i << " ";
+                        i++;
+                    } while (i <= 5);
+                </pre>
+        <br>
+        <h2>Comparison of loops</h2>
+        <table>
+            <tr>
+                <th>Loop Type</th>
+                <th>Use Case</th>
+                <th>Condition Check</th>
+            </tr>
+            <tr>
+                <td>for loop</td>
+                <td>Known iterations</td>
+                <td>Before each iteration</td>
+            </tr>
+            <tr>
+                <td>while loop</td>
+                <td>Unknown iterations</td>
+                <td>Before each iteration</td>
+            </tr>
+            <tr>
+                <td>do-while loop</td>
+                <td>At least one execution needed</td>
+                <td>After each iteration</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Nested Loops</h2>
+        <p>
+            A loop inside another loop is called a nested loop. The inner loop completes all its iterations for
+            each iteration of the outer loop.
+        </p>
+        <pre>
+                    example:
+                    for (int i = 1; i <= 3; i++) {
+                        for (int j = 1; j <= 2; j++) {
+                            cout << "i: " << i << ", j: " << j << endl;
+                        }
+                    }
+                </pre>
+        <br>
+        <p>
+            output:-
+            i: 1, j: 1
+            i: 1, j: 2
+            i: 2, j: 1
+            i: 2, j: 2
+            i: 3, j: 1
+            i: 3, j: 2
+        </p>
+
+        <br>
+        <h2>What is loop statements ?</h2>
+        <p>
+            Loop control statements are used to change the normal flow of a loop. They allow us to terminate a loop,
+            skip iterations, or transfer control as required.
+        </p>
+        <br>
+        <h2>Types of Loop Control Statements</h2>
+        <ul>
+            <li>break statement</li>
+            <li>continue statement</li>
+            <li>return statement</li>
+        </ul>
+        <br>
+        <p>break statement :-</p>
+        Used to terminate the loop immediately and transfer control to the statement following the loop.
+        <pre>
+                        Syntax:
+                        break;
+                        </pre>
+        <pre>
+                        example:
+                        for (int i = 1; i <= 10; i++) {
+                            if (i == 5) {
+                                break; // exit loop when i is 5
+                            }
+                            cout << i << " ";
+                        }
+                    </pre>
+        <br>
+        <p>continue statement :-</p>
+        Used to skip the current iteration of the loop and proceed to the next iteration.
+        <pre>
+                        Syntax:
+                        continue;
+                        </pre>
+        <pre>
+                        example:
+                        for (int i = 1; i <= 10; i++) {
+                            if (i % 2 == 0) {
+                                continue; // skip even numbers
+                            }
+                            cout << i << " ";
+                        }
+                    </pre>
+        <br>
+        <p>return statement :-</p>
+        Used to exit from a function and optionally return a value to the caller.
+        <pre>
+                        Syntax:
+                        return value;
+                        </pre>
+        <pre>
+                        example:
+                        int sum(int a, int b) {
+                            return a + b; // return the sum of a and b
+                        }
+                        </pre>
+        <br>
+        <p>goto statement :-</p>
+        Used to transfer control to a label within the same function.
+        <pre>
+                            Syntax:
+                            goto label;
+                            </pre>
+        <pre>
+                            example:
+                            int main() {
+                                int i = 1;
+                                loop:
+                                    cout << i << " ";
+                                    i++;
+                                    if (i <= 5) {
+                                        goto loop; // jump to label 'loop'
+                                    }
+                                return 0;
+                            }
+                        </pre>
+        <br>
+        <h2>Difference between break, continue, and return statements</h2>
+        <table>
+            <tr>
+                <th>Statement</th>
+                <th>Purpose</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>break</td>
+                <td>Terminate loop</td>
+                <td>Exits the loop immediately</td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>Skip iteration</td>
+                <td>Skips to the next iteration of the loop</td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>Exit function</td>
+                <td>Returns control to the caller and optionally returns a value</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Summary of loop</h2>
+        <ul>
+            <li>Loops are used to repeat a block of code multiple times based on a condition.</li>
+            <li>Types of loops: for, while, do-while.</li>
+            <li>Loop control statements: break, continue, return, goto.</li>
+            <li>Nested loops allow loops within loops for complex iterations.</li>
+        </ul>
+        <br>
+        <h2>Now</h2>
+        <p>Let's practice what we've learned so far.</p>
+        <p>Try writing a program that uses all the loop control statements we discussed.</p>
+        <br>
+        <h2>Practice Exercise</h2>
+        <p>
+            Write a C++ program that:
+        <ul>
+            <li>Uses a for loop to print numbers from 1 to 10.</li>
+            <li>Skips even numbers using the continue statement.</li>
+            <li>Stops printing when the number reaches 7 using the break statement.</li>
+        </ul>
+        </p>
+        <br>
+        <h2>Now Next Topic</h2>
+        <p>Next, we will learn about Functions in C++, which allow us to modularize our code and reuse it efficiently.
+        </p>
+        <br>
+        <h2>Functions</h2>
+        <p>
+            A function is a block of code that performs a specific task. It allows you to break down your program
+            into smaller, manageable parts.
+        </p>
+        <p>Benefits of using functions</p>
+        <ul>
+            <li>Modularity: Functions help organize code into logical sections.</li>
+            <li>Reusability: Functions can be called multiple times without rewriting code.</li>
+            <li>Maintainability: Functions make it easier to update and maintain code.</li>
+        </ul>
+        <br>
+        <h2>Function Declaration and Definition</h2>
+        <p>
+            A function must be declared before it is used. The declaration specifies the function's name,
+            return type, and parameters (if any).
+        </p>
+        <pre>
+                                Syntax:
+                                return_type function_name(parameter_list);
+                                </pre>
+        <p>
+            The function definition contains the actual code that performs the task.
+        </p>
+        <pre>
+                                    Syntax:
+                                    return_type function_name(parameter_list) {
+                                        // function body
+    }
+                                    </pre>
+        <br>
+        <h2>Example of a Function</h2>
+        <pre>
+                                        #include <iostream>
+using namespace std;
+                                        // Function declaration
+                                        int add(int a, int b);
+
+                                        int main() {
+                                            int num1 = 5, num2 = 10;
+                                            // Function call
+                                            int sum = add(num1, num2);
+                                            cout << "Sum: " << sum << endl;
+                                            return 0;
+                                        }
+
+                                        // Function definition
+                                        int add(int a, int b) {
+                                            return a + b;
+                                        }
+                                    </pre>
+        <br>
+        <h2>Function Parameters and Return Types</h2>
+        <p>
+            Functions can take parameters (inputs) and return values (outputs).
+        </p>
+        <ul>
+            <li>Parameters: Variables that hold the values passed to the function.</li>
+            <li>Return Type: The data type of the value that the function returns.</li>
+        </ul>
+        <br>
+        <h2>Types of Functions</h2>
+        <ul>
+            <li>Void Functions: Do not return a value.</li>
+            <li>Value-returning Functions: Return a value of a specified type.</li>
+            <li>Recursive Functions: Call themselves to solve a problem.</li>
+            </ul>
+            <br>
+            <h2>1.Void Functions: Do Not Return a Value</h2>
+            <p>
+                Void functions do not return any value. They are used to perform a specific task.
+            </p>
+            <pre>
+                void printMessage() {
+                    cout << "Hello, World!" << endl;
+                }
+            </pre>
+            <br>
+            <h2>2.Value-returning Functions: Return a Value of a Specified Type</h2>
+            <p>
+                Value-returning functions return a value of a specified type.
+                </p>
+            <pre>
+                int multiply(int a, int b) {
+                    return a * b;
+                }
+                </pre>
+            <br>
+            <h2>3.Recursive Functions: Call Themselves to Solve a Problem</h2>
+            <p>
+                Recursive functions call themselves to solve a problem by breaking it down into smaller subproblems.
+                </p>
+            <pre>
+                int factorial(int n) {
+                    if (n == 0) {
+                        return 1;
+                    }
+                    return n * factorial(n - 1);
+                }
+            </pre>
+            <br>
+            <h2>Function Overloading</h2>
+            <p>
+                Function overloading allows multiple functions with the same name but different parameters.
+            </p>
+            <pre>
+                int add(int a, int b) {
+                    return a + b;
+                }
+
+                double add(double a, double b) {
+                    return a + b;
+                }
+            </pre>
+            <br>
+            <h2></h2>
+            
+             
 
     </section>
 
